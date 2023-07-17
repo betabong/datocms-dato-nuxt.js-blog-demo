@@ -1,6 +1,11 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   css: ['bulma'],
+  modules: ['@nuxtjs/tailwindcss'],
+  ssr: true,
+  nitro: {
+    preset: 'netlify-edge',
+  },
   runtimeConfig: {
     previewModeEncryptionSecret:
       // !> Before releasing to production, see the README
